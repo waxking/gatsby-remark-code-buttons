@@ -1,0 +1,32 @@
+.gatsby-code-button-container {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  top: 28px;
+  z-index: 100;
+  pointer-events: none; }
+
+.gatsby-code-button {
+  cursor: pointer;
+  pointer-events: initial; }
+  .gatsby-code-button:after {
+    font-size: 16px;
+    position: absolute;
+    visibility: hidden; }
+  .gatsby-code-button:after {
+    visibility: hidden;
+    position: absolute;
+    display: none;
+    padding: 5px;
+    content: attr(data-tooltip);
+    color: #fff;
+    font-size: 16px;
+    background-color: #000;
+    white-space: nowrap; }
+  .gatsby-code-button[data-tooltip]:hover:after, .gatsby-code-button[data-tooltip]:focus:after {
+    visibility: visible;
+    display: block;
+    z-index: 200; }
+  .gatsby-code-button[data-tooltip]:after {
+    top: 26px;
+    right: 0; }
